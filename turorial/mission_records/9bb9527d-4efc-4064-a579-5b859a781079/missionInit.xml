@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<MissionInit xmlns="http://ProjectMalmo.microsoft.com" PlatformVersion="0.30.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ProjectMalmo.microsoft.com MissionInit.xsd">
+  <Mission>
+    <About>
+      <Summary>Moving Times</Summary>
+    </About>
+    <ServerSection>
+      <ServerHandlers>
+        <FlatWorldGenerator destroyAfterUse="true" forceReset="false" generatorString="3;7,220*1,5*3,2;3;,biome_1" seed=""/>
+        <DrawingDecorator>
+          <DrawCuboid type="air" x1="-21" x2="21" y1="226" y2="236" z1="-21" z2="21"/>
+          <DrawCuboid type="lava" x1="-21" x2="21" y1="226" y2="226" z1="-21" z2="21"/>
+          <DrawCuboid type="gold_block" x1="-20" x2="20" y1="226" y2="16" z1="-20" z2="20"/>
+        </DrawingDecorator>
+        <AnimationDecorator ticksPerUpdate="10">
+          <Linear>
+            <CanvasBounds>
+              <min x="-20" y="226" z="-20"/>
+              <max x="20" y="230" z="20"/>
+            </CanvasBounds>
+            <InitialPos x="7" y="228" z="-1"/>
+            <InitialVelocity x="-0.314728688189" y="0" z="0.251262396784"/>
+          </Linear>
+          <DrawingDecorator>
+            <DrawBlock type="slime" x="0" y="1" z="0"/>
+            <DrawBlock type="slime" x="0" y="-1" z="0"/>
+            <DrawBlock type="slime" x="1" y="0" z="0"/>
+            <DrawBlock type="slime" x="-1" y="0" z="0"/>
+            <DrawBlock type="slime" x="0" y="0" z="1"/>
+            <DrawBlock type="slime" x="0" y="0" z="-1"/>
+          </DrawingDecorator>
+        </AnimationDecorator>
+        <AnimationDecorator ticksPerUpdate="10">
+          <Linear>
+            <CanvasBounds>
+              <min x="-20" y="226" z="-20"/>
+              <max x="20" y="230" z="20"/>
+            </CanvasBounds>
+            <InitialPos x="5" y="228" z="0"/>
+            <InitialVelocity x="0.271575981679" y="0" z="-0.384600129797"/>
+          </Linear>
+          <DrawingDecorator>
+            <DrawBlock type="slime" x="0" y="1" z="0"/>
+            <DrawBlock type="slime" x="0" y="-1" z="0"/>
+            <DrawBlock type="slime" x="1" y="0" z="0"/>
+            <DrawBlock type="slime" x="-1" y="0" z="0"/>
+            <DrawBlock type="slime" x="0" y="0" z="1"/>
+            <DrawBlock type="slime" x="0" y="0" z="-1"/>
+          </DrawingDecorator>
+        </AnimationDecorator>
+        <AnimationDecorator ticksPerUpdate="10">
+          <Linear>
+            <CanvasBounds>
+              <min x="-20" y="226" z="-20"/>
+              <max x="20" y="230" z="20"/>
+            </CanvasBounds>
+            <InitialPos x="-11" y="228" z="11"/>
+            <InitialVelocity x="0.371863511768" y="0" z="0.422364405954"/>
+          </Linear>
+          <DrawingDecorator>
+            <DrawBlock type="slime" x="0" y="1" z="0"/>
+            <DrawBlock type="slime" x="0" y="-1" z="0"/>
+            <DrawBlock type="slime" x="1" y="0" z="0"/>
+            <DrawBlock type="slime" x="-1" y="0" z="0"/>
+            <DrawBlock type="slime" x="0" y="0" z="1"/>
+            <DrawBlock type="slime" x="0" y="0" z="-1"/>
+          </DrawingDecorator>
+        </AnimationDecorator>
+        <AnimationDecorator ticksPerUpdate="10">
+          <Linear>
+            <CanvasBounds>
+              <min x="-20" y="226" z="-20"/>
+              <max x="20" y="230" z="20"/>
+            </CanvasBounds>
+            <InitialPos x="-13" y="228" z="-2"/>
+            <InitialVelocity x="0.318012904989" y="0" z="0.313808912872"/>
+          </Linear>
+          <DrawingDecorator>
+            <DrawBlock type="slime" x="0" y="1" z="0"/>
+            <DrawBlock type="slime" x="0" y="-1" z="0"/>
+            <DrawBlock type="slime" x="1" y="0" z="0"/>
+            <DrawBlock type="slime" x="-1" y="0" z="0"/>
+            <DrawBlock type="slime" x="0" y="0" z="1"/>
+            <DrawBlock type="slime" x="0" y="0" z="-1"/>
+          </DrawingDecorator>
+        </AnimationDecorator>
+        <AnimationDecorator ticksPerUpdate="1">
+          <Linear>
+            <CanvasBounds>
+              <min x="-21" y="225" z="-21"/>
+              <max x="21" y="247" z="21"/>
+            </CanvasBounds>
+            <InitialPos x="0" y="246" z="0"/>
+            <InitialVelocity x="0" y="-0.025" z="0"/>
+          </Linear>
+          <DrawingDecorator>
+            <DrawCuboid type="obsidian" x1="-20" x2="20" y1="0" y2="1" z1="-20" z2="20"/>
+          </DrawingDecorator>
+        </AnimationDecorator>
+        <AnimationDecorator ticksPerUpdate="1">
+          <Parametric seed="random">
+            <x>15*sin(t/20.0)</x>
+            <y>227-(t/120.0)</y>
+            <z>15*cos(t/20.0)</z>
+          </Parametric>
+          <DrawingDecorator>
+            <DrawBlock type="fence" x="0" y="2" z="0"/>
+            <DrawBlock type="fence" x="0" y="3" z="0"/>
+            <DrawBlock type="pumpkin" x="0" y="4" z="0"/>
+          </DrawingDecorator>
+        </AnimationDecorator>
+        <AnimationDecorator ticksPerUpdate="1">
+          <Parametric seed="random">
+            <x>(15*sin(t/20.0))+(2*sin(t/2.0))</x>
+            <y>227-(t/120.0)+2*cos(t/1.5)</y>
+            <z>(15*cos(t/20.0))+(2*cos(t/2.0))</z>
+          </Parametric>
+          <DrawingDecorator>
+            <DrawBlock type="skull" x="0" y="2" z="0"/>
+          </DrawingDecorator>
+        </AnimationDecorator>
+        <ServerQuitFromTimeUp description="out_of_time" timeLimitMs="150000"/>
+        <ServerQuitWhenAnyAgentFinishes description=""/>
+      </ServerHandlers>
+    </ServerSection>
+    <AgentSection mode="Survival">
+      <Name>Walt</Name>
+      <AgentStart>
+        <Placement pitch="0" x="0.5" y="227" yaw="0" z="0.5"/>
+        <Inventory/>
+      </AgentStart>
+      <AgentHandlers>
+        <RewardForTouchingBlockType dimension="0">
+          <Block behaviour="oncePerBlock" cooldownInMs="1000" distribution="" reward="-100" type="slime"/>
+        </RewardForTouchingBlockType>
+        <RewardForMissionEnd dimension="0" rewardForDeath="-1000" rewardForDeathDistribution="">
+          <Reward description="out_of_time" distribution="" reward="-900"/>
+          <Reward description="found_goal" distribution="" reward="100000"/>
+        </RewardForMissionEnd>
+        <ContinuousMovementCommands turnSpeedDegs="240"/>
+        <AgentQuitFromTouchingBlockType>
+          <Block description="found_goal" type="skull"/>
+        </AgentQuitFromTouchingBlockType>
+      </AgentHandlers>
+    </AgentSection>
+  </Mission>
+  <ExperimentUID>missionEndTestExperiment</ExperimentUID>
+  <ClientRole>0</ClientRole>
+  <ClientAgentConnection>
+    <ClientIPAddress>127.0.0.1</ClientIPAddress>
+    <ClientMissionControlPort>10000</ClientMissionControlPort>
+    <ClientCommandsPort>0</ClientCommandsPort>
+    <AgentIPAddress>127.0.0.1</AgentIPAddress>
+    <AgentMissionControlPort>10256</AgentMissionControlPort>
+    <AgentVideoPort>0</AgentVideoPort>
+    <AgentObservationsPort>10853</AgentObservationsPort>
+    <AgentRewardsPort>10670</AgentRewardsPort>
+  </ClientAgentConnection>
+</MissionInit>
