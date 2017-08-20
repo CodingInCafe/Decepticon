@@ -41,6 +41,7 @@ for i in range(45,0, -1):
     test += '''<DrawBlock x="5" y="4" z="'''+str(i)+'''" type="stone"/>'''
 
 
+
 missionXML='''<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
             <Mission xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
               <About>
